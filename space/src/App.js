@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-  const [spaceStuff, setSpaceStuff] = useState([])
+  const [catStuff, setCatStuff] = useState([])
 
   useEffect(() => {
     const headers = {
@@ -17,20 +17,20 @@ function App() {
     })
       .then((r) => r.json())
       .then((data) => {
-        setSpaceStuff(data)
+        setCatStuff(data)
       })
   }, [])
 
-  //console.log(spaceStuff)
+  //console.log(catStuff)
 
 
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          AYYYOOO WELCOME BACK TK
+          ALL OF THE CATS
         </p>
-        <PhotoContainter catStuff={spaceStuff} />
+        <PhotoContainter catStuff={catStuff} />
       </header>
     </div>
   );
