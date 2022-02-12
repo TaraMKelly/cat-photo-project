@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Form from "./Form"
 import PhotoCard from "./PhotoCard"
 import MoreButton from "./MoreButton"
 
@@ -22,6 +23,7 @@ function PhotoContainter ({catStuff}) {
         <> 
          <MoreButton onClickMore={handleClickMore} />
          {fiveCatPics}
+         <Form />
         </>
     )
 

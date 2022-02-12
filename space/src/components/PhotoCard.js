@@ -1,5 +1,5 @@
 import LikeButton from "./LikeButton"
-import {useState} from "react"
+
 
 function PhotoCard ( {cat}) {
     
